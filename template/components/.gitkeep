@@ -1,0 +1,35 @@
+# Components Directory
+
+Place custom Vue components here for reuse across slides.
+
+## Example Usage
+
+Create a component:
+
+```vue
+<!-- Counter.vue -->
+<script setup>
+import { ref } from 'vue'
+const count = ref(0)
+</script>
+
+<template>
+  <button @click="count++">
+    Count: {{ count }}
+  </button>
+</template>
+```
+
+Use in slides.md:
+
+```markdown
+---
+<Counter />
+---
+```
+
+## Tips
+
+- Extract complex slide layouts into components
+- Create reusable visualization components
+- Share components between presentations by symlinking

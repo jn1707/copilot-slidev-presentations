@@ -1,0 +1,24 @@
+# Images Directory
+
+Place your presentation images here.
+
+## Organization Tips
+
+- Use descriptive filenames: `detector-diagram.png`, `results-plot.png`
+- Organize by slide topic if needed (create subdirectories)
+- Optimize images before adding (compress large files)
+- Prefer PNG for diagrams, JPG for photos
+
+## Symlinks
+
+You can symlink images from other presentations or shared assets:
+
+```bash
+# Link specific image
+ln -s ../../../shared-assets/logos/ku_logo.png ./ku_logo.png
+
+# Link from another presentation
+ln -s "../../Geneva presentation/public/images/detector.jpg" ./detector.jpg
+```
+
+Symlinked images work exactly like regular files in your slides.
